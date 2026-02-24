@@ -30,3 +30,6 @@ provider "kubernetes" {
    add a provider "helm" block here. Leaving it out will make the provider rely on
    the environment (KUBECONFIG) or in-cluster config. */
 
+provider "helm" {}
+
+

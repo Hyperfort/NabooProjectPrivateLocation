@@ -21,7 +21,7 @@ variable "datadog_site" {
 variable "kubeconfig_path" {
   description = "Path to kubeconfig file used by the Kubernetes/Helm providers"
   type        = string
-  default     = "~/.kube/config"
+  default     = "/home/melizondo/.kube/config"
 }
 
 variable "namespace" {
@@ -45,6 +45,6 @@ variable "create_datadog_private_location" {
 variable "synthetics_config_file" {
   description = "Path to a local JSON config file for the private location worker (used when create_datadog_private_location = false)."
   type        = string
-  default     = "${path.module}/config/synthetics-check-runner.json"
+  default     = "config/synthetics-check-runner.json"
 }
 
